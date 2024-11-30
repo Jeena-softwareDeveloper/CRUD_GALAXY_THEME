@@ -38,4 +38,4 @@ Open your browser and visit http://localhost:3000 to view the app.
 🌐 Live Demo
 The application is deployed and can be accessed through the following link:
 
-CRUD Galaxy Theme Live Demo
+https://jeena-softwaredeveloper.github.io/CRUD_GALAXY_THEME/
