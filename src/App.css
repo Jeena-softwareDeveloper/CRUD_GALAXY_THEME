@@ -1,0 +1,147 @@
+/* General styling for the container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  padding-top: 20px;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png'); /* Add subtle star texture */
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+  overflow: auto;
+}
+
+/* Styling for the form container */
+.form {
+  background: linear-gradient(145deg, #333844, #232526);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(255, 255, 255, 0.1);
+  width: 350px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  animation: fadeIn 1.5s ease-in-out;
+  backdrop-filter: blur(5px);
+}
+
+/* Input field styling */
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  font-size: 16px;
+  background: rgba(50, 50, 50, 0.8);
+  color: #ffffff;
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #6b52ae;
+  outline: none;
+  box-shadow: 0 0 15px #6b52ae, 0 0 5px #ffffff;
+}
+
+/* Button styling */
+button {
+  margin-top: 12px;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6b52ae, #cc2b5e, #ff5370);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(255, 80, 120, 0.5);
+}
+
+button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 10px 20px #cc2b5e, 0 0 12px #6b52ae;
+}
+
+/* Styling for the datatable */
+.datatable {
+  margin-top: 20px;
+  background: linear-gradient(145deg, #1d1e22, #28292d);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), 0 0 12px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 800px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ffffff;
+}
+
+th, td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Table header styling */
+th {
+  background: rgba(50, 50, 50, 0.8);
+  color: #ff5370;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+/* Table row hover effect */
+tr:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transition: background-color 0.3s ease;
+}
+
+/* Action buttons in table */
+button:nth-child(1) {
+  background: linear-gradient(90deg, #28a745, #42f59e);
+}
+
+button:nth-child(1):hover {
+  box-shadow: 0 10px 20px #28a745, 0 0 8px #42f59e;
+  margin-left: auto;
+}
+
+button:nth-child(2) {
+  background: linear-gradient(90deg, #dc3545, #f55980);
+  margin-left: 34px;
+}
+
+button:nth-child(2):hover {
+  box-shadow: 0 10px 20px #dc3545, 0 0 8px #f55980;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
